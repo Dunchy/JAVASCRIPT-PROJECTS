@@ -9,7 +9,9 @@ var firstGame = "Minecraft",
 var Sent1 = "This is the beginning of the string";
 var Sent2 = "and this is the end of the string";
 
-
 document.write(firstGame);
 alert(Sent1 + Sent2);
 
+window.addEventListener("load", function (){
+    document.getElementById("temp").innerHTML = "Page is fully loaded";
+});
