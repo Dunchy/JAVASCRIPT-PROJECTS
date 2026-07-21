@@ -1,9 +1,9 @@
-function activatedictionary(){
-    var pepperDictionary = {
-        Name: "Carolina Reaper",
-        Heat: "90%",
-        Flavor: "savoury"
+function MyDictionary(){
+    var Pepper = {
+        name: "Carolina Reaper",
+        heat: "90%",
+        flavor: "savoury"
     }
-    delete pepperDictionary.Flavor;
-    document.getElementById("display").innerHTML = pepperDictionary.Flavor;
+    delete Pepper.flavor;
+    document.getElementById("display").innerHTML = Pepper.flavor;
 }
