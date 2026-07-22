@@ -1,3 +1,5 @@
+var num1 = 8;
+
 document.write("10" + 5);
 
 function ShowIfNan() {
@@ -36,6 +38,10 @@ function Compare(){
     // If the expression returns true, ! changes it to value and vice versa
     document.getElementById("p4").innerHTML = !(float1 > float3);
     document.getElementById("p4").innerHTML = !(float1 == float2);
+}
+
+function ShowType(){
+       document.write(typeof num1);
 }
 
 console.log(5 + 7);
