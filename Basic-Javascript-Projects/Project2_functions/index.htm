@@ -5,19 +5,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <script src="JS/main.js"></script>
-    <title>Javascript Functions</title>
+    <title>Comparisons Type Coercion</title>
 </head>
 
 <body>
-    <p id="firstString">The answer to the wordle yesterday was pshaw</p>
-    <p id="secondString"> which I have never heard of before</p>
-    <br>
-    <button id="temp" onclick="displayPageTitle()">The title of this page is?</button>
-    <!--button that changes its text due to calling the JS fuction-->
-    <br>
-    <br>
-    <button id="conc" onclick="concatenateStrings()">Click concatenate</button>
-    <!--button that concatenates the above paragraph elements via a JS function-->
-</body>
+    <!--When these buttons are pressed they call the corresponding function in the javascript file, 
+    which change the data held within each paragraph element-->>
+    <div>
+        <button onclick="ShowIfNan()">Is it NaN?</button>
+        <p id="nan"></p>
+        <p id="true"></p>
+        <p id="false"></p>
+        <p id="infinity"></p>
+        <p id="notinfinity"></p>
+        <p id="booltrue"></p>
+        <p id="boolfalse"></p>
+    </div>
+    <div>
+        <br>
+        <button onclick="Compare()">True or False</button>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <p id="p6"></p>
+        <p id="p7"></p>
+        <p id="p8"></p>
 
-</html>
+    </div>
+    <div>
+        <br>
+        <button onclick="ShowType()">Press for type</button>
+    </div>
+</body>
