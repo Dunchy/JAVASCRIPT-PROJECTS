@@ -1,0 +1,73 @@
+/* Centers all content with default font*/
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Slideshow Container styling*/
+.slideshow-container {
+    max-width: 800px; /* Limits how wide the slideshow can get */
+    position: relative; /* Allows us to position the next/prev buttons inside this box */
+    margin: auto; /* Centers the slideshow container on the page */
+}
+
+/* Slides */
+/* Hides all the slides by default so they can be made to be displayed in Javascript*/
+.mySlides {
+    display: none;
+}
+
+/* Image Sizing */
+/* This ensures all images are uniformly sized without stretching */
+.mySlides img {
+    width: 100%;
+    height: 400px; /* Every image should be 400px heighth wize */
+    object-fit: cover; /* Crops the images to fit the above dimensions 
+    so they will all be the same size but will crop instead of stretching if needed*/
+}
+
+/* Styling for the previous and next buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Positions the bottons half way down the images */
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.4); /* Makes the images transparent and black */
+}
+
+/* Pins the button for going to the next image on the right side */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+/* Makes the buttons less transparent when hovered over */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Dot and circle styling */
+.dot {
+    cursor: pointer; /*Makes the cursor a pointer when hovering over a dot*/
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%; /* Rounds the edges of the dots to make them circular */
+    display: inline-block;
+}
+
+/* When one of the dots is hovered over it darkens */
+.active, .dot:hover {
+    background-color: #717171;
+}
