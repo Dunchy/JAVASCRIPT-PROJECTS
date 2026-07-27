@@ -36,7 +36,8 @@ function currentSlide(n) {
 // This is the main function of the slideshow. It controls which slide is currently being displayed at any given time
 function showSlides(n) {
     let i;
-    // Gathers all HTML elements with the class "mySlides" and "dot"
+    
+    // Makes two "lists" of all the slides and dots html elements
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
     
@@ -46,13 +47,13 @@ function showSlides(n) {
     // Just like above, if the index tries to go below 1 it will wrap to the last slide
     if (n < 1) {slideIndex = slides.length}
     
-    // Loops through the slides and hides the last slide when a new one comes up (I think)
+    // Loops through and hides all the slides
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     
-    // Basically the same as the above for loop except for the navigation dots. 
-    // Just makes the dots reflect what is happening with the slides
+    // Loops through and hides all the dots
+    // Got to find out why these need to be 2 different loops because why would you ever have a different amount of dots than slides
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
