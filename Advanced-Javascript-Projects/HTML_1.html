@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="JavaScript/JavaScript_1.js" defer></script>
+    <title></title>
+</head>
+
+<body>
+    <div>
+        <canvas id="mtgBanner" width="800" height="50" style="border:5px solid black;"></canvas>
+    </div>
+    <div>
+        <h1>Make a MTG deck here!</h1>
+        <h3>Choose a color from these options</h3>
+        <ul>
+            <li>Black</li>
+            <li>White</li>
+            <li>Red</li>
+            <li>Blue</li>
+            <li>Green</li>
+        </ul>
+        <input id="enter_color" placeholder="Enter a color" value="">
+        <br>
+        <button id="submit" onclick="format_input()">Submit</button>
+        <br>
+        <br>
+        <br>
+        <p id="description">Loading description</p>
+    </div>
+    <div>
+        <ul>
+            <h3>Creatures of this color:  </h3>
+            <li class="creature"></li>
+            <li class="creature"></li>
+            <li class="creature"></li>
+            <h3>Decks of this color specialize in: </h3>
+            <li class="creature"></li>
+            <li class="creature"></li>
+        </ul>
+    </div>
+</body>
