@@ -1,0 +1,63 @@
+body {
+    background-color: #4a0b86;
+}
+
+div {
+    font-family: "Verdana", sans-serif;
+    color: #fffb01;
+}
+
+h1 {
+    font-family: "Arial", sans-serif;
+    color: #7215ff;
+}
+
+h3 {
+    font-family: "Arial", sans-serif;
+    color: #bf00ff;
+}
+
+#menuBG {
+width: 600px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+width: 600px;
+    height: 200px;
+}
+
+#totalPrice {
+    width:200px;
+    height:190px;
+    margin:0 auto;
+    float:right;
+}
+
+/* Removed the left and right sections and pulled them all under the column */
+.column {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#showText {
+    width:200px;
+    height:190px;
+    margin:0px auto;
+    float:left;
+}
+
+#cart {
+top: 0;
+    margin: 0px auto;
+    width: 600px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin:10px 0px 0px 100px;
+    width:100px;
+    height:40px
+}
